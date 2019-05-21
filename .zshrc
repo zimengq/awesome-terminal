@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ChrisQiu/.oh-my-zsh
+export ZSH=PATH_TO_YOUR_OH_MY_ZSH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -99,34 +99,14 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_ALL=
 
-export SWIG_HOME=/Users/ChrisQiu/Swig
-export PATH=${PATH}:${SWIG_HOME}/bin
-
 # For AWS
 export PATH="$PATH:PATH_TO_AWS_KEY_FOLDER"
 export AWS_ACCESS_KEY_ID=""
 export AWS_SECRET_ACCESS_KEY=""
 
-# For Scala and Apache Spark
-# export SPARK_HOME=/Users/ChrisQiu/spark/spark-2.1.1-bin-hadoop2.6
-# export PATH=$PATH:$SPARK_HOME/bin
-# export SCALA_HOME=/usr/local/Cellar/scala
-# export PATH=$PATH:$SCALA_HOME/bin
-
-# For Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
-
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 
 # For Sublime Text
-echo 'export PATH=$PATH:$HOME/bin' >> ~/.zshrc
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/ChrisQiu/Courses/S19/y/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ChrisQiu/Courses/S19/y/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/ChrisQiu/Courses/S19/y/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ChrisQiu/Courses/S19/y/google-cloud-sdk/completion.zsh.inc'; fi
-
 export EDITOR='subl' -w
 export PATH=$PATH:$HOME/bin
